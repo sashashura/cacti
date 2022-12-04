@@ -133,7 +133,7 @@ function remote_client_authorized() {
 	global $poller_db_cnn_id;
 
 	/* don't allow to run from the command line */
-	$client_addr = get_client_addr('', true);
+	$client_addr = get_client_addr();
 	if ($client_addr === false) {
 		return false;
 	}
